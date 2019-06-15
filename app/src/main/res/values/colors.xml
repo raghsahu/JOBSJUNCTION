@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#060e71</color>
+
+    <color name="buttonColor">#060e71</color>
+    <color name="startcolor">#2936de</color>
+    <color name="endcolor">#04072d</color>
+    <color name="midcolor">#646ef2</color>
+
+    <color name="et_startcolor">#ffffff</color>
+    <color name="et_endcolor">#dddedf</color>
+    <color name="et_color">#fdfdfd</color>
+
+
+</resources>

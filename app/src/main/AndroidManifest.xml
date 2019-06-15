@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dev.raghav.jobsjunction">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/jlogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/jlogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+
+
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".RegistrationActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".NotificationActivity"></activity>
+        <receiver android:name=".PushNotification.AlarmReceiver"></receiver>
+
+        <!--<service android:enabled="true" android:name=".ServiceClass" />-->
+
+        <activity android:name=".LoginActivity"></activity>
+
+    </application>
+</manifest>

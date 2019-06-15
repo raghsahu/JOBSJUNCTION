@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!--<item>-->
+    <!--<shape-->
+        <!--android:shape="rectangle" >-->
+        <!--<corners android:radius="14dp" />-->
+
+        <!--<stroke android:width="3dp"-->
+            <!--android:color="#060e71"/>-->
+        <!--<solid android:color="#060e71" />-->
+
+        <!--<gradient-->
+            <!--android:angle="45"-->
+            <!--android:centerColor="#1FA8D1"-->
+            <!--android:centerX="35%"-->
+            <!--android:endColor="#060d96"-->
+            <!--android:startColor="#060d96"-->
+            <!--android:type="linear" />-->
+
+        <!--<size-->
+            <!--android:width="270dp"-->
+            <!--android:height="60dp" />-->
+    <!--</shape>-->
+<!--</item>-->
+
+    <item android:state_pressed="true" >
+        <shape android:shape="rectangle"  >
+            <corners android:radius="10dp" />
+            <stroke android:width="1dip" android:color="@color/buttonColor" />
+            <gradient android:angle="-90" android:startColor="@color/endcolor" android:endColor="@color/startcolor"  />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape android:shape="rectangle"  >
+            <corners android:radius="10dp" />
+            <stroke android:width="1dip" android:color="@color/startcolor" />
+            <solid android:color="@color/buttonColor"/>
+        </shape>
+    </item>
+    <item >
+        <shape android:shape="rectangle"  >
+            <corners android:radius="10dp" />
+            <stroke android:width="1dip" android:color="@color/buttonColor" />
+            <gradient android:angle="-90" android:startColor="@color/startcolor" android:endColor="@color/endcolor" />
+        </shape>
+    </item>
+
+</selector>
